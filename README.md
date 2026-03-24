@@ -30,7 +30,8 @@ The L293D H-bridge enables bidirectional control of the DC motor, allowing it to
 
 **Stack:** Arduino (C++)
 
-<img src="Assets/Washing-Machine.jpeg" width="800">
+<p align="center">
+<img src="Assets/Washing-Machine.jpeg" width="800"></p>
 
 ### 2. 4-Function Calculator
 
@@ -56,4 +57,5 @@ User input is taken through the keypad and parsed using a stack-based shunting-y
 
 **Stack:** Arduino (C++)
 
-<img src="Assets/Calculator.jpeg" width="500">
+<p align="center">
+<img src="Assets/Calculator.jpeg" width="500"></p>
