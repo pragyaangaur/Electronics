@@ -127,3 +127,28 @@ The decoded output is continuously rendered on a 16×2 LCD display. The system m
 
 <p align="center">
 <img src="Assets/Telegraph.jpeg" width="800"></p>
+
+## 6. Digital Thermometer (Smoothed Sensor Interface)
+
+**What it Does:**  
+Measures ambient temperature using an analog sensor, applies smoothing to reduce noise, and displays the result on a 16×2 LCD with a fever alert indicator.
+
+**Core Idea:**  
+Transforming noisy analog sensor data into stable, usable measurements through real-time signal averaging.
+
+**How it Works:**  
+The system reads an analog voltage from a temperature sensor and converts it into a temperature value using a linear calibration model. Since raw sensor readings are subject to noise and fluctuation, a moving average filter is applied over the last 10 samples.
+
+Each new reading replaces the oldest value in a fixed-size buffer, and the average is updated incrementally. This produces a smoother and more stable temperature output compared to raw readings.
+
+The processed temperature is displayed on a 16×2 LCD. If the smoothed temperature exceeds a defined threshold (37.5°C), an LED is activated as a visual alert.
+
+**Features:**
+- Analog temperature sensing with voltage-to-temperature conversion  
+- Moving average filter for noise reduction  
+- Real-time LCD display of temperature readings  
+- Threshold-based alert system (LED indicator)  
+- Continuous sampling with rolling buffer implementation  
+
+<p align="center">
+<img src="Assets/Thermometer.jpeg" width="800"></p>
